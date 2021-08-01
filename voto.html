@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo de Voto</title>
+    <link rel="stylesheet" href="voto.css">
+</head>
+<body>
+
+    <button id="gerar-result">Resultado dos Votos</button>
+
+   <h1>Urna Eletrónica</h1>
+   <h3>Por: Gelson D J Matias</h3>
+    <div id="main">
+        <div class="campos">
+            <p>Número do Candidato
+                <form action="">
+                    <input type="text" id="campo1" readonly  maxlength="1">
+                    <input type="text" id="campo2" readonly maxlength="1">
+                </form>
+            </p>
+        </div>
+
+        <div id="botoes">
+            <button class="bt" onclick="inserir(1)">1</button>
+            <button class="bt" onclick="inserir(2)">2</button>
+            <button class="bt" onclick="inserir(3)">3</button>
+            <button class="bt" onclick="inserir(4)">4</button>
+            <button class="bt" onclick="inserir(5)">5</button>
+            <button class="bt" onclick="inserir(6)">6</button>
+            <button class="bt" onclick="inserir(7)">7</button>
+            <button class="bt" onclick="inserir(8)">8</button>
+            <button class="bt" onclick="inserir(9)">9</button>
+            <button class="bt btn" onclick="inserir(0)">0</button>
+        </div>
+
+        <div class="decidir">
+            <button id="nulo">Branco</button>
+            <button id="corrige" onclick="corrigir()">Corrigir</button>
+            <button id="voto" onclick="votar()">Votar</button>
+        </div>
+    </div>
+
+    <div id="answer">
+        <p id="res"> </p>
+        <p id="todosvotos">Aqui...</p>
+    </div>
+
+    <script src="JQuery/jquery.min.js"></script><!--Inserção da Biblioteca JQuery-->
+    <script src="ready.js"></script>
+
+    <h3>Melhorado apartir do trabalho Original do professor Aldo</h3>
+</body>
+</html>

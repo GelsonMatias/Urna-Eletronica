@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+h1,h3{
+    text-align: center;
+    font-family: sans-serif;
+}
+#main{
+    width: 300px;
+    border: 1px solid #696969;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    flex-direction: column;
+    margin: 30px auto;
+    background-color: #ccc;
+    border-radius: 18px;
+}
+#botoes{
+    margin: 5px auto;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    padding: 8px;
+    width: 225px;
+}
+#botoes button{
+    padding: 15px 18px;
+    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid green;
+    background-color: #111;
+}
+#botoes .btn{
+    text-align: center;
+    margin-left: 46px;
+    padding: 15px 51px;
+    border: 1px solid green;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+}
+.campos{
+    margin: 8px auto;
+}
+.decidir{
+    margin: 8px auto;
+    display: flex;
+    flex: 1;
+    padding: 5px;
+}
+.decidir #nulo, #corrige, #voto{
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #808080;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#nulo{
+    background-color: #fff;
+}
+#corrige{
+    background-color: #ff4500;
+}
+#voto{
+    background-color: #32cd32;
+}
+.campos{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500;
+}
+.campos input{
+    width: 80px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: arial;
+    padding: 0px 30px;
+    outline: none;
+}
+body #answer{
+    position: fixed;
+    top: 19%;
+    left: -320px;
+    /* left: 0; */
+    border: 1px solid #808080;
+    width: 25%;
+    height: 50vh;
+    padding: 15px;
+    transition: all 1s;
+}
+body.open-result #answer{
+    left: 0;
+}
+#gerar-result{
+    position: absolute;
+    top: 106px;
+    left: -7px;
+    padding: 8px;
+    font-family: arial;
+    font-size: 16px;
+    color: #fff;
+    background: blue;
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
